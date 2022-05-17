@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .image > img {
@@ -117,6 +117,19 @@ body {
   transform: translateX(-360vw);
 }
 
+#radio1:checked ~ .img-wrapper .image1,
+#radio2:checked ~ .img-wrapper .image2,
+#radio3:checked ~ .img-wrapper .image3,
+#radio4:checked ~ .img-wrapper .image4,
+#radio5:checked ~ .img-wrapper .image5,
+#radio6:checked ~ .img-wrapper .image6,
+#radio7:checked ~ .img-wrapper .image7,
+#radio8:checked ~ .img-wrapper .image8,
+#radio9:checked ~ .img-wrapper .image9,
+#radio10:checked ~ .img-wrapper .image10 {
+  animation: anim-img 0.3s ease-out;
+}
+
 #radio1:checked ~ .controls .btn1,
 #radio2:checked ~ .controls .btn2,
 #radio3:checked ~ .controls .btn3,
@@ -141,10 +154,19 @@ body {
 #radio9:checked ~ .text-wrapper .text9,
 #radio10:checked ~ .text-wrapper .text10 {
   display: block;
-  animation: anim 0.2s;
+  animation: anim-text 0.3s ease-out;
 }
 
-@keyframes anim {
+@keyframes anim-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-text {
   0% {
     opacity: 0;
     transform: translateX(-50%);
