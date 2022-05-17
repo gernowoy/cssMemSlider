@@ -10,6 +10,7 @@ body {
   align-items: center;
   background-color: rgb(64, 64, 64);
   font-size: 1.5rem;
+  line-height: 2.2rem;
   color: #fff;
 }
 
@@ -51,14 +52,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.label-btn {
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: #9461b3;
-  border: 0.2rem solid #9461b3;
-  border-radius: 50%;
-}
-
 .label {
   width: 2rem;
   height: 3rem;
@@ -66,6 +59,14 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.label-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #9461b3;
+  border: 0.2rem solid #9461b3;
+  border-radius: 50%;
 }
 
 .label:hover .label-btn {
@@ -176,7 +177,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   body {  
     font-size: 1.2rem;
@@ -235,4 +236,21 @@ body {
     transform: translateX(-675vw);
   }
 
+}
+
+@media screen and (max-width: 400px) {
+
+  body {  
+    line-height: 2rem;
+  }
+
+  .label {
+    width: 1.6rem;
+    height: 2.5rem;
+  }
+  
+  .label-btn {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
 }
