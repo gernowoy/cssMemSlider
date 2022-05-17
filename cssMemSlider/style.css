@@ -175,3 +175,64 @@ body {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  body {  
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 75vw;
+    margin-top: 8vh;
+  }
+  
+  .img-wrapper {  
+    width: 75vw;
+  }
+
+  .image {  
+    min-width: 75vw;
+  }
+
+  #radio1:checked ~ .img-wrapper .image {
+    margin-left: 0vw;
+  }
+  
+  #radio2:checked ~ .img-wrapper .image {  
+    transform: translateX(-75vw);
+  }
+  
+  #radio3:checked ~ .img-wrapper .image {
+    transform: translateX(-150vw);
+  }
+  
+  #radio4:checked ~ .img-wrapper .image {
+    transform: translateX(-225vw);
+  }
+  
+  #radio5:checked ~ .img-wrapper .image {
+    transform: translateX(-300vw);
+  }
+  
+  #radio6:checked ~ .img-wrapper .image {
+    transform: translateX(-375vw);
+  }
+  
+  #radio7:checked ~ .img-wrapper .image {
+    transform: translateX(-450vw);
+  }
+  
+  #radio8:checked ~ .img-wrapper .image {
+    transform: translateX(-525vw);
+  }
+  
+  #radio9:checked ~ .img-wrapper .image {
+    transform: translateX(-600vw);
+  }
+  
+  #radio10:checked ~ .img-wrapper .image {
+    transform: translateX(-675vw);
+  }
+
+}
